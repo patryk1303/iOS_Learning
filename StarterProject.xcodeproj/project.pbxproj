@@ -21,6 +21,7 @@
 		95A564861AA6F11F005E287E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564681AA6F11F005E287E /* UIKit.framework */; };
 		95A5648E1AA6F11F005E287E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95A5648C1AA6F11F005E287E /* InfoPlist.strings */; };
 		95A564901AA6F11F005E287E /* StarterProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5648F1AA6F11F005E287E /* StarterProjectTests.m */; };
+		95A5649B1AA6F792005E287E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5649A1AA6F792005E287E /* City.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		95A5648B1AA6F11F005E287E /* StarterProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarterProjectTests-Info.plist"; sourceTree = "<group>"; };
 		95A5648D1AA6F11F005E287E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95A5648F1AA6F11F005E287E /* StarterProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarterProjectTests.m; sourceTree = "<group>"; };
+		95A564991AA6F792005E287E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		95A5649A1AA6F792005E287E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				95A5647A1AA6F11F005E287E /* ViewController.m */,
 				95A5647C1AA6F11F005E287E /* Images.xcassets */,
 				95A5646B1AA6F11F005E287E /* Supporting Files */,
+				95A564991AA6F792005E287E /* City.h */,
+				95A5649A1AA6F792005E287E /* City.m */,
 			);
 			path = StarterProject;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				95A5647B1AA6F11F005E287E /* ViewController.m in Sources */,
 				95A564751AA6F11F005E287E /* AppDelegate.m in Sources */,
+				95A5649B1AA6F792005E287E /* City.m in Sources */,
 				95A564711AA6F11F005E287E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarterProject/StarterProject-Prefix.pch";
 				INFOPLIST_FILE = "StarterProject/StarterProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarterProject/StarterProject-Prefix.pch";
 				INFOPLIST_FILE = "StarterProject/StarterProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +464,7 @@
 				95A564951AA6F11F005E287E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95A564961AA6F11F005E287E /* Build configuration list for PBXNativeTarget "StarterProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +473,7 @@
 				95A564981AA6F11F005E287E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
