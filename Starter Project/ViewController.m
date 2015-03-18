@@ -18,23 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    int number1 = 6;
-    int number2 = 19;
-    
-    NSNumber *number = [[NSNumber alloc]initWithFloat:12.5f];
-    NSString *str = [NSString stringWithFormat:@"Wartość *number to %@",number.stringValue];
-    NSString *str2 = @"String 123";
-    
-//    NSLog(@"Hell low, world!\n%d - %d = %d",number1,number2,number1-number2);
-//    NSLog(@"%@",str);
-    
-//    City *city1 = [[City alloc] initWithName:@"Koszalin" andCitizensCount:@(109170)];
     City *city1 = [City cityWithName:@"Koszalin" andCitizensCount:@(109170)];
-    [city1 showYourCity];
+    City *city2 = [City cityWithName:@"Szczecin" andCitizensCount:@(410000)];
+    City *city3 = [City cityWithName:@"Łódź" andCitizensCount:@(750000)];
+    City *city4 = [City cityWithName:@"Warszawa" andCitizensCount:@(1800000)];
+    NSArray *cityList = [[NSArray alloc] initWithObjects:city1,city2,city3,city4, nil];
     
-//    NSLog(@"Wartość *number to %@",number.stringValue);
-	// Do any additional setup after loading the view, typically from a nib.
+    for (City *city in cityList) {
+        [city showYourCity];
+    }
 }
 
 - (void)didReceiveMemoryWarning
