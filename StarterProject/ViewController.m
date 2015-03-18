@@ -10,6 +10,12 @@
 #import "City.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (assign, nonatomic) NSInteger counter;
+
+- (IBAction)increaseButtonTapped:(id)sender;
+- (IBAction)decreaseButtonTapped:(id)sender;
+
 
 @end
 
@@ -19,25 +25,25 @@
 {
     [super viewDidLoad];
     
-    City *city1 = [[City alloc] initWithName:@"Koszalin 1" andCitizensCount:@(100000)];
-    
-    City *city2 = [[City alloc] initWithName:@"Koszalin 2" andCitizensCount:@(100000)];
-    
-    City *city3 = [[City alloc] initWithName:@"Koszalin 3" andCitizensCount:@(100000)];
-    
-    City *city4 = [[City alloc] initWithName:@"Koszalin 4" andCitizensCount:@(100000)];
-    
-    NSArray *cityList = [[NSArray alloc] initWithObjects:city1, city2, city3, city4, nil];
-    
-    for (City *tempCity in cityList) {
-        [tempCity showDescription];
-    }
+    self.counter = 0;
+    [self updateTextLabel];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)increaseButtonTapped:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.counter += 1;
+    [self updateTextLabel];
+}
+
+- (IBAction)decreaseButtonTapped:(id)sender
+{
+    self.counter -= 1;
+    [self updateTextLabel];
+}
+
+- (void)updateTextLabel
+{
+    self.textLabel.text = [NSString stringWithFormat:@"%@", @(self.counter)];
 }
 
 @end
