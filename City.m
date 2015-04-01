@@ -10,9 +10,10 @@
 
 @implementation City
 
-- (void) showYourCity
+- (NSString *) createDescription
 {
-    NSLog(@"Witaj mieszkańcu z miasta %@. Wiem, że razem w tobą mieszka %@ ludziów!",self.name,@([self.citizensCount intValue] - 1));
+    return [NSString stringWithFormat:@"Witaj mieszkańcu z miasta %@. Wiem, że razem w tobą mieszka %@ ludziów!",self.name,@([self.citizensCount intValue] - 1)];
+    //NSLog(@"Witaj mieszkańcu z miasta %@. Wiem, że razem w tobą mieszka %@ ludziów!",self.name,@([self.citizensCount intValue] - 1));
 }
 
 - (instancetype)initWithName:(NSString *)name andCitizensCount:(NSNumber *)citizensCount

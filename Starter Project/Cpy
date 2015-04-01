@@ -1,0 +1,12 @@
+- (IBAction)menuButtonUpTapped:(id)sender {
+    self.menuButtonTapCount++;
+    [self updateLabelMenuButtonTappedCount];
+}
+
+- (void)updateLabelMenuButtonTappedCount {
+    self.textLabel.text = [NSString stringWithFormat:@"Przycisk naciśnięty\n%@ razy", @(self.menuButtonTapCount)];
+}
+- (IBAction)menuButtonDownTapped:(id)sender {
+    self.menuButtonTapCount--;
+    [self updateLabelMenuButtonTappedCount];
+}

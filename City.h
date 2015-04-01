@@ -15,6 +15,6 @@
 
 - (instancetype) initWithName:(NSString*)name andCitizensCount:(NSNumber*)citizensCount;
 + (City*) cityWithName:(NSString*)name andCitizensCount:(NSNumber*)citizensCount;
-- (void) showYourCity;
+- (NSString *) createDescription;
 
 @end

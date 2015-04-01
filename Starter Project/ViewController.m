@@ -8,13 +8,11 @@
 
 #import "ViewController.h"
 #import "City.h"
+#import "DataViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (assign,nonatomic) NSInteger menuButtonTapCount;
-- (IBAction)menuButtonDownTapped:(id)sender;
-- (IBAction)menuButtonUpTapped:(id)sender;
-
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+- (IBAction)showDeatilButtonTapped:(id)sender;
 @end
 
 @implementation ViewController
@@ -23,19 +21,13 @@
 {
     [super viewDidLoad];
     
-    self.menuButtonTapCount = 0;
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)];
     
-    City *city1 = [City cityWithName:@"Koszalin" andCitizensCount:@(109170)];
-    City *city2 = [City cityWithName:@"Szczecin" andCitizensCount:@(410000)];
-    City *city3 = [City cityWithName:@"Łódź" andCitizensCount:@(750000)];
-    City *city4 = [City cityWithName:@"Warszawa" andCitizensCount:@(1800000)];
-    NSArray *cityList = [[NSArray alloc] initWithObjects:city1,city2,city3,city4, nil];
+    [self.view addGestureRecognizer:tapRecognizer];
+}
 
-    for (City *city in cityList) {
-        [city showYourCity];
-    }
-    
-    self.textLabel.text = @"Hell low, NOTHING!";
+- (void)viewTapped {
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,17 +35,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)menuButtonUpTapped:(id)sender {
-    self.menuButtonTapCount++;
-    [self updateLabelMenuButtonTappedCount];
+- (IBAction)showDeatilButtonTapped:(id)sender {
+    [self performSegueWithIdentifier:@"showDataSegue" sender:self]
+    ;
 }
 
-- (void)updateLabelMenuButtonTappedCount {
-    self.textLabel.text = [NSString stringWithFormat:@"Przycisk naciśnięty\n%@ razy", @(self.menuButtonTapCount)];
-}
-- (IBAction)menuButtonDownTapped:(id)sender {
-    self.menuButtonTapCount--;
-    [self updateLabelMenuButtonTappedCount];
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"showDataSegue"]) {
+        DataViewController *destinationVC = segue.destinationViewController;
+        City *city = [City cityWithName:self.textField.text andCitizensCount:@(108057)];
+//        destinationVC.text = self.textField.text;
+        destinationVC.text = city.createDescription;
+    }
 }
 @end

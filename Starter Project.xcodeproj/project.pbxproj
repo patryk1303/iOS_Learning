@@ -22,6 +22,8 @@
 		B81098281AA6F12500975C61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B81098261AA6F12500975C61 /* InfoPlist.strings */; };
 		B810982A1AA6F12500975C61 /* Starter_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B81098291AA6F12500975C61 /* Starter_ProjectTests.m */; };
 		B81098351AA6F79F00975C61 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = B81098341AA6F79F00975C61 /* City.m */; };
+		B85E98501ACBCF590010476E /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85E984F1ACBCF590010476E /* DataViewController.m */; };
+		B85E98521ACBCFE50010476E /* Cpy in Resources */ = {isa = PBXBuildFile; fileRef = B85E98511ACBCFE50010476E /* Cpy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		B81098291AA6F12500975C61 /* Starter_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starter_ProjectTests.m; sourceTree = "<group>"; };
 		B81098331AA6F79F00975C61 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = ../City.h; sourceTree = "<group>"; };
 		B81098341AA6F79F00975C61 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = ../City.m; sourceTree = "<group>"; };
+		B85E984E1ACBCF590010476E /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		B85E984F1ACBCF590010476E /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		B85E98511ACBCFE50010476E /* Cpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cpy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,9 @@
 				B81098141AA6F12500975C61 /* ViewController.m */,
 				B81098161AA6F12500975C61 /* Images.xcassets */,
 				B81098051AA6F12500975C61 /* Supporting Files */,
+				B85E984E1ACBCF590010476E /* DataViewController.h */,
+				B85E984F1ACBCF590010476E /* DataViewController.m */,
+				B85E98511ACBCFE50010476E /* Cpy */,
 			);
 			path = "Starter Project";
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 				B81098171AA6F12500975C61 /* Images.xcassets in Resources */,
 				B81098091AA6F12500975C61 /* InfoPlist.strings in Resources */,
 				B81098121AA6F12500975C61 /* Main.storyboard in Resources */,
+				B85E98521ACBCFE50010476E /* Cpy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 				B810980F1AA6F12500975C61 /* AppDelegate.m in Sources */,
 				B81098351AA6F79F00975C61 /* City.m in Sources */,
 				B810980B1AA6F12500975C61 /* main.m in Sources */,
+				B85E98501ACBCF590010476E /* DataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +476,7 @@
 				B810982F1AA6F12500975C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B81098301AA6F12500975C61 /* Build configuration list for PBXNativeTarget "Starter ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +485,7 @@
 				B81098321AA6F12500975C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
