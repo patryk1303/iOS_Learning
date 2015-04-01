@@ -8,14 +8,12 @@
 
 #import "ViewController.h"
 #import "City.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (assign, nonatomic) NSInteger counter;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
-- (IBAction)increaseButtonTapped:(id)sender;
-- (IBAction)decreaseButtonTapped:(id)sender;
-
+- (IBAction)showDetailButtonTapped:(id)sender;
 
 @end
 
@@ -25,25 +23,28 @@
 {
     [super viewDidLoad];
     
-    self.counter = 0;
-    [self updateTextLabel];
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)];
+    
+    [self.view addGestureRecognizer:tapRecognizer];
+    
 }
 
-- (IBAction)increaseButtonTapped:(id)sender
+- (void)viewTapped
 {
-    self.counter += 1;
-    [self updateTextLabel];
+    [self.view endEditing:YES];
 }
 
-- (IBAction)decreaseButtonTapped:(id)sender
+- (IBAction)showDetailButtonTapped:(id)sender
 {
-    self.counter -= 1;
-    [self updateTextLabel];
+    [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
 }
 
-- (void)updateTextLabel
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    self.textLabel.text = [NSString stringWithFormat:@"%@", @(self.counter)];
+    if ([segue.identifier isEqualToString:@"showDetailSegue"]) {
+        DetailViewController *destinationVC = segue.destinationViewController;
+        destinationVC.text = self.textField.text;
+    }
 }
 
 @end

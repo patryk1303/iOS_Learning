@@ -12,7 +12,7 @@
 @property NSString *name;
 @property NSNumber *citizensCount;
 
-- (void)showDescription;
+- (NSString *)createDescription;
 - (instancetype)initWithName:(NSString *)name andCitizensCount:(NSNumber *)citizensCount;
 + (City *)cityWithName:(NSString *)name andCitizensCount:(NSNumber *)citizensCount;
 

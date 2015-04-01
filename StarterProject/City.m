@@ -26,9 +26,9 @@
     return self;
 }
 
-- (void)showDescription
+- (NSString *)createDescription
 {
-    NSLog(@"Nazwa miasta to %@, a liczba ludności to %@", self.name, self.citizensCount);
+    return [NSString stringWithFormat:@"Nazwa miasta to %@, a liczba ludności to %@", self.name, self.citizensCount];
 }
 
 @end
