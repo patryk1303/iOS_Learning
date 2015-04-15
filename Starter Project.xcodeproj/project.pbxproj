@@ -24,6 +24,7 @@
 		B81098351AA6F79F00975C61 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = B81098341AA6F79F00975C61 /* City.m */; };
 		B85E98501ACBCF590010476E /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85E984F1ACBCF590010476E /* DataViewController.m */; };
 		B85E98521ACBCFE50010476E /* Cpy in Resources */ = {isa = PBXBuildFile; fileRef = B85E98511ACBCFE50010476E /* Cpy */; };
+		B8C25C7A1ADE4418005CC399 /* CityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C25C791ADE4418005CC399 /* CityListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		B85E984E1ACBCF590010476E /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		B85E984F1ACBCF590010476E /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		B85E98511ACBCFE50010476E /* Cpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cpy; sourceTree = "<group>"; };
+		B8C25C781ADE4418005CC399 /* CityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListTableViewController.h; sourceTree = "<group>"; };
+		B8C25C791ADE4418005CC399 /* CityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				B85E984E1ACBCF590010476E /* DataViewController.h */,
 				B85E984F1ACBCF590010476E /* DataViewController.m */,
 				B85E98511ACBCFE50010476E /* Cpy */,
+				B8C25C781ADE4418005CC399 /* CityListTableViewController.h */,
+				B8C25C791ADE4418005CC399 /* CityListTableViewController.m */,
 			);
 			path = "Starter Project";
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			files = (
 				B81098151AA6F12500975C61 /* ViewController.m in Sources */,
 				B810980F1AA6F12500975C61 /* AppDelegate.m in Sources */,
+				B8C25C7A1ADE4418005CC399 /* CityListTableViewController.m in Sources */,
 				B81098351AA6F79F00975C61 /* City.m in Sources */,
 				B810980B1AA6F12500975C61 /* main.m in Sources */,
 				B85E98501ACBCF590010476E /* DataViewController.m in Sources */,
