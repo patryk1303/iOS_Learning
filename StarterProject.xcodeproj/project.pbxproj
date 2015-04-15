@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958EAC561ADE43FE00CBAC1C /* CityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */; };
 		95A564651AA6F11F005E287E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564641AA6F11F005E287E /* Foundation.framework */; };
 		95A564671AA6F11F005E287E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564661AA6F11F005E287E /* CoreGraphics.framework */; };
 		95A564691AA6F11F005E287E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564681AA6F11F005E287E /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		958EAC541ADE43FE00CBAC1C /* CityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListTableViewController.h; sourceTree = "<group>"; };
+		958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListTableViewController.m; sourceTree = "<group>"; };
 		95A564611AA6F11F005E287E /* StarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A564641AA6F11F005E287E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95A564661AA6F11F005E287E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				95A5649A1AA6F792005E287E /* City.m */,
 				95A762DE1ACBCF4E008B29D6 /* DetailViewController.h */,
 				95A762DF1ACBCF4E008B29D6 /* DetailViewController.m */,
+				958EAC541ADE43FE00CBAC1C /* CityListTableViewController.h */,
+				958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */,
 			);
 			path = StarterProject;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			files = (
 				95A762E01ACBCF4E008B29D6 /* DetailViewController.m in Sources */,
 				95A5647B1AA6F11F005E287E /* ViewController.m in Sources */,
+				958EAC561ADE43FE00CBAC1C /* CityListTableViewController.m in Sources */,
 				95A564751AA6F11F005E287E /* AppDelegate.m in Sources */,
 				95A5649B1AA6F792005E287E /* City.m in Sources */,
 				95A564711AA6F11F005E287E /* main.m in Sources */,
