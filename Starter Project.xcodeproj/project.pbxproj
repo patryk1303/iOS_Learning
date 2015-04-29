@@ -14,7 +14,7 @@
 		B810980B1AA6F12500975C61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B810980A1AA6F12500975C61 /* main.m */; };
 		B810980F1AA6F12500975C61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B810980E1AA6F12500975C61 /* AppDelegate.m */; };
 		B81098121AA6F12500975C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81098101AA6F12500975C61 /* Main.storyboard */; };
-		B81098151AA6F12500975C61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81098141AA6F12500975C61 /* ViewController.m */; };
+		B81098151AA6F12500975C61 /* NewCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81098141AA6F12500975C61 /* NewCityViewController.m */; };
 		B81098171AA6F12500975C61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81098161AA6F12500975C61 /* Images.xcassets */; };
 		B810981E1AA6F12500975C61 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B810981D1AA6F12500975C61 /* XCTest.framework */; };
 		B810981F1AA6F12500975C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81097FE1AA6F12400975C61 /* Foundation.framework */; };
@@ -25,6 +25,7 @@
 		B85E98501ACBCF590010476E /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85E984F1ACBCF590010476E /* DataViewController.m */; };
 		B85E98521ACBCFE50010476E /* Cpy in Resources */ = {isa = PBXBuildFile; fileRef = B85E98511ACBCFE50010476E /* Cpy */; };
 		B8C25C7A1ADE4418005CC399 /* CityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C25C791ADE4418005CC399 /* CityListTableViewController.m */; };
+		B8F507B71AF0B4DF008F6709 /* CityCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F507B61AF0B4DF008F6709 /* CityCatalog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,8 @@
 		B810980D1AA6F12500975C61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B810980E1AA6F12500975C61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B81098111AA6F12500975C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B81098131AA6F12500975C61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B81098141AA6F12500975C61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B81098131AA6F12500975C61 /* NewCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCityViewController.h; sourceTree = "<group>"; };
+		B81098141AA6F12500975C61 /* NewCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCityViewController.m; sourceTree = "<group>"; };
 		B81098161AA6F12500975C61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B810981C1AA6F12500975C61 /* Starter ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Starter ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810981D1AA6F12500975C61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,6 +65,8 @@
 		B85E98511ACBCFE50010476E /* Cpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cpy; sourceTree = "<group>"; };
 		B8C25C781ADE4418005CC399 /* CityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListTableViewController.h; sourceTree = "<group>"; };
 		B8C25C791ADE4418005CC399 /* CityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListTableViewController.m; sourceTree = "<group>"; };
+		B8F507B51AF0B4DF008F6709 /* CityCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCatalog.h; sourceTree = "<group>"; };
+		B8F507B61AF0B4DF008F6709 /* CityCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCatalog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,20 +126,14 @@
 		B81098041AA6F12400975C61 /* Starter Project */ = {
 			isa = PBXGroup;
 			children = (
-				B81098331AA6F79F00975C61 /* City.h */,
-				B81098341AA6F79F00975C61 /* City.m */,
+				B8F507B41AF0B463008F6709 /* View Controllers */,
+				B8F507B21AF0B442008F6709 /* Model */,
 				B810980D1AA6F12500975C61 /* AppDelegate.h */,
 				B810980E1AA6F12500975C61 /* AppDelegate.m */,
 				B81098101AA6F12500975C61 /* Main.storyboard */,
-				B81098131AA6F12500975C61 /* ViewController.h */,
-				B81098141AA6F12500975C61 /* ViewController.m */,
 				B81098161AA6F12500975C61 /* Images.xcassets */,
 				B81098051AA6F12500975C61 /* Supporting Files */,
-				B85E984E1ACBCF590010476E /* DataViewController.h */,
-				B85E984F1ACBCF590010476E /* DataViewController.m */,
 				B85E98511ACBCFE50010476E /* Cpy */,
-				B8C25C781ADE4418005CC399 /* CityListTableViewController.h */,
-				B8C25C791ADE4418005CC399 /* CityListTableViewController.m */,
 			);
 			path = "Starter Project";
 			sourceTree = "<group>";
@@ -168,6 +165,32 @@
 				B81098261AA6F12500975C61 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8F507B21AF0B442008F6709 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B81098331AA6F79F00975C61 /* City.h */,
+				B81098341AA6F79F00975C61 /* City.m */,
+				B8F507B51AF0B4DF008F6709 /* CityCatalog.h */,
+				B8F507B61AF0B4DF008F6709 /* CityCatalog.m */,
+			);
+			indentWidth = 4;
+			name = Model;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		B8F507B41AF0B463008F6709 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8C25C781ADE4418005CC399 /* CityListTableViewController.h */,
+				B8C25C791ADE4418005CC399 /* CityListTableViewController.m */,
+				B85E984E1ACBCF590010476E /* DataViewController.h */,
+				B85E984F1ACBCF590010476E /* DataViewController.m */,
+				B81098131AA6F12500975C61 /* NewCityViewController.h */,
+				B81098141AA6F12500975C61 /* NewCityViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81098151AA6F12500975C61 /* ViewController.m in Sources */,
+				B81098151AA6F12500975C61 /* NewCityViewController.m in Sources */,
 				B810980F1AA6F12500975C61 /* AppDelegate.m in Sources */,
+				B8F507B71AF0B4DF008F6709 /* CityCatalog.m in Sources */,
 				B8C25C7A1ADE4418005CC399 /* CityListTableViewController.m in Sources */,
 				B81098351AA6F79F00975C61 /* City.m in Sources */,
 				B810980B1AA6F12500975C61 /* main.m in Sources */,

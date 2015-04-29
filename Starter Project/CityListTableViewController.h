@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "City.h"
+#import "CityCatalog.h"
+#import "DataViewController.h"
 
 @interface CityListTableViewController : UITableViewController
 
