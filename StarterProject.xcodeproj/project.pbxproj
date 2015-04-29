@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		958EAC561ADE43FE00CBAC1C /* CityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */; };
+		959E0F7D1AF0B4DC0064E426 /* CityCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E0F7C1AF0B4DC0064E426 /* CityCatalog.m */; };
+		959E0F801AF0C40A0064E426 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E0F7F1AF0C40A0064E426 /* TableViewController.m */; };
 		95A564651AA6F11F005E287E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564641AA6F11F005E287E /* Foundation.framework */; };
 		95A564671AA6F11F005E287E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564661AA6F11F005E287E /* CoreGraphics.framework */; };
 		95A564691AA6F11F005E287E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564681AA6F11F005E287E /* UIKit.framework */; };
@@ -15,7 +17,7 @@
 		95A564711AA6F11F005E287E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A564701AA6F11F005E287E /* main.m */; };
 		95A564751AA6F11F005E287E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A564741AA6F11F005E287E /* AppDelegate.m */; };
 		95A564781AA6F11F005E287E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A564761AA6F11F005E287E /* Main.storyboard */; };
-		95A5647B1AA6F11F005E287E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5647A1AA6F11F005E287E /* ViewController.m */; };
+		95A5647B1AA6F11F005E287E /* NewCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5647A1AA6F11F005E287E /* NewCityViewController.m */; };
 		95A5647D1AA6F11F005E287E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A5647C1AA6F11F005E287E /* Images.xcassets */; };
 		95A564841AA6F11F005E287E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564831AA6F11F005E287E /* XCTest.framework */; };
 		95A564851AA6F11F005E287E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A564641AA6F11F005E287E /* Foundation.framework */; };
@@ -39,6 +41,10 @@
 /* Begin PBXFileReference section */
 		958EAC541ADE43FE00CBAC1C /* CityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListTableViewController.h; sourceTree = "<group>"; };
 		958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListTableViewController.m; sourceTree = "<group>"; };
+		959E0F7B1AF0B4DC0064E426 /* CityCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCatalog.h; sourceTree = "<group>"; };
+		959E0F7C1AF0B4DC0064E426 /* CityCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCatalog.m; sourceTree = "<group>"; };
+		959E0F7E1AF0C40A0064E426 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		959E0F7F1AF0C40A0064E426 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		95A564611AA6F11F005E287E /* StarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A564641AA6F11F005E287E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95A564661AA6F11F005E287E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,8 +56,8 @@
 		95A564731AA6F11F005E287E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95A564741AA6F11F005E287E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		95A564771AA6F11F005E287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		95A564791AA6F11F005E287E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		95A5647A1AA6F11F005E287E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95A564791AA6F11F005E287E /* NewCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCityViewController.h; sourceTree = "<group>"; };
+		95A5647A1AA6F11F005E287E /* NewCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCityViewController.m; sourceTree = "<group>"; };
 		95A5647C1AA6F11F005E287E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95A564821AA6F11F005E287E /* StarterProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarterProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A564831AA6F11F005E287E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -88,6 +94,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		959E0F791AF0B4390064E426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95A564991AA6F792005E287E /* City.h */,
+				95A5649A1AA6F792005E287E /* City.m */,
+				959E0F7B1AF0B4DC0064E426 /* CityCatalog.h */,
+				959E0F7C1AF0B4DC0064E426 /* CityCatalog.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		959E0F7A1AF0B4440064E426 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A564791AA6F11F005E287E /* NewCityViewController.h */,
+				95A5647A1AA6F11F005E287E /* NewCityViewController.m */,
+				95A762DE1ACBCF4E008B29D6 /* DetailViewController.h */,
+				95A762DF1ACBCF4E008B29D6 /* DetailViewController.m */,
+				958EAC541ADE43FE00CBAC1C /* CityListTableViewController.h */,
+				958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */,
+				959E0F7E1AF0C40A0064E426 /* TableViewController.h */,
+				959E0F7F1AF0C40A0064E426 /* TableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		95A564581AA6F11F005E287E = {
 			isa = PBXGroup;
 			children = (
@@ -121,19 +153,13 @@
 		95A5646A1AA6F11F005E287E /* StarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				959E0F7A1AF0B4440064E426 /* View Controllers */,
+				959E0F791AF0B4390064E426 /* Model */,
 				95A564731AA6F11F005E287E /* AppDelegate.h */,
 				95A564741AA6F11F005E287E /* AppDelegate.m */,
 				95A564761AA6F11F005E287E /* Main.storyboard */,
-				95A564791AA6F11F005E287E /* ViewController.h */,
-				95A5647A1AA6F11F005E287E /* ViewController.m */,
 				95A5647C1AA6F11F005E287E /* Images.xcassets */,
 				95A5646B1AA6F11F005E287E /* Supporting Files */,
-				95A564991AA6F792005E287E /* City.h */,
-				95A5649A1AA6F792005E287E /* City.m */,
-				95A762DE1ACBCF4E008B29D6 /* DetailViewController.h */,
-				95A762DF1ACBCF4E008B29D6 /* DetailViewController.m */,
-				958EAC541ADE43FE00CBAC1C /* CityListTableViewController.h */,
-				958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */,
 			);
 			path = StarterProject;
 			sourceTree = "<group>";
@@ -265,11 +291,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A762E01ACBCF4E008B29D6 /* DetailViewController.m in Sources */,
-				95A5647B1AA6F11F005E287E /* ViewController.m in Sources */,
+				95A5647B1AA6F11F005E287E /* NewCityViewController.m in Sources */,
+				959E0F7D1AF0B4DC0064E426 /* CityCatalog.m in Sources */,
 				958EAC561ADE43FE00CBAC1C /* CityListTableViewController.m in Sources */,
 				95A564751AA6F11F005E287E /* AppDelegate.m in Sources */,
 				95A5649B1AA6F792005E287E /* City.m in Sources */,
 				95A564711AA6F11F005E287E /* main.m in Sources */,
+				959E0F801AF0C40A0064E426 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
