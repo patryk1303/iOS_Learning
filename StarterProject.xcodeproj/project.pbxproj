@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950D32C61AFFBDAB004A6B27 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D32C31AFFBDAB004A6B27 /* CoreDataManager.m */; };
+		950D32C71AFFBDAB004A6B27 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 950D32C41AFFBDAB004A6B27 /* Model.xcdatamodeld */; };
 		958EAC561ADE43FE00CBAC1C /* CityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */; };
 		959E0F7D1AF0B4DC0064E426 /* CityCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E0F7C1AF0B4DC0064E426 /* CityCatalog.m */; };
 		959E0F801AF0C40A0064E426 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E0F7F1AF0C40A0064E426 /* TableViewController.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950D32C21AFFBDAB004A6B27 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		950D32C31AFFBDAB004A6B27 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		950D32C51AFFBDAB004A6B27 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		958EAC541ADE43FE00CBAC1C /* CityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListTableViewController.h; sourceTree = "<group>"; };
 		958EAC551ADE43FE00CBAC1C /* CityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListTableViewController.m; sourceTree = "<group>"; };
 		959E0F7B1AF0B4DC0064E426 /* CityCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCatalog.h; sourceTree = "<group>"; };
@@ -94,9 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		950D32C81AFFBDB1004A6B27 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				950D32C21AFFBDAB004A6B27 /* CoreDataManager.h */,
+				950D32C31AFFBDAB004A6B27 /* CoreDataManager.m */,
+				950D32C41AFFBDAB004A6B27 /* Model.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		959E0F791AF0B4390064E426 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				950D32C81AFFBDB1004A6B27 /* CoreData */,
 				95A564991AA6F792005E287E /* City.h */,
 				95A5649A1AA6F792005E287E /* City.m */,
 				959E0F7B1AF0B4DC0064E426 /* CityCatalog.h */,
@@ -293,9 +309,11 @@
 				95A762E01ACBCF4E008B29D6 /* DetailViewController.m in Sources */,
 				95A5647B1AA6F11F005E287E /* NewCityViewController.m in Sources */,
 				959E0F7D1AF0B4DC0064E426 /* CityCatalog.m in Sources */,
+				950D32C61AFFBDAB004A6B27 /* CoreDataManager.m in Sources */,
 				958EAC561ADE43FE00CBAC1C /* CityListTableViewController.m in Sources */,
 				95A564751AA6F11F005E287E /* AppDelegate.m in Sources */,
 				95A5649B1AA6F792005E287E /* City.m in Sources */,
+				950D32C71AFFBDAB004A6B27 /* Model.xcdatamodeld in Sources */,
 				95A564711AA6F11F005E287E /* main.m in Sources */,
 				959E0F801AF0C40A0064E426 /* TableViewController.m in Sources */,
 			);
@@ -516,6 +534,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		950D32C41AFFBDAB004A6B27 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				950D32C51AFFBDAB004A6B27 /* Model.xcdatamodel */,
+			);
+			currentVersion = 950D32C51AFFBDAB004A6B27 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 95A564591AA6F11F005E287E /* Project object */;
 }
