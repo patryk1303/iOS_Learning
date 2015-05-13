@@ -28,6 +28,8 @@
 		95A564901AA6F11F005E287E /* StarterProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5648F1AA6F11F005E287E /* StarterProjectTests.m */; };
 		95A5649B1AA6F792005E287E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5649A1AA6F792005E287E /* City.m */; };
 		95A762E01ACBCF4E008B29D6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A762DF1ACBCF4E008B29D6 /* DetailViewController.m */; };
+		B8B485B91B0332990061C31D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B8B485B81B0332990061C31D /* .gitignore */; };
+		B8B485BB1B0332AD0061C31D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B485BA1B0332AD0061C31D /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		95A5649A1AA6F792005E287E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		95A762DE1ACBCF4E008B29D6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		95A762DF1ACBCF4E008B29D6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B8B485B81B0332990061C31D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B8B485BA1B0332AD0061C31D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B485BB1B0332AD0061C31D /* CoreData.framework in Frameworks */,
 				95A564671AA6F11F005E287E /* CoreGraphics.framework in Frameworks */,
 				95A564691AA6F11F005E287E /* UIKit.framework in Frameworks */,
 				95A564651AA6F11F005E287E /* Foundation.framework in Frameworks */,
@@ -139,6 +144,7 @@
 		95A564581AA6F11F005E287E = {
 			isa = PBXGroup;
 			children = (
+				B8B485B81B0332990061C31D /* .gitignore */,
 				95A5646A1AA6F11F005E287E /* StarterProject */,
 				95A564891AA6F11F005E287E /* StarterProjectTests */,
 				95A564631AA6F11F005E287E /* Frameworks */,
@@ -158,6 +164,7 @@
 		95A564631AA6F11F005E287E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8B485BA1B0332AD0061C31D /* CoreData.framework */,
 				95A564641AA6F11F005E287E /* Foundation.framework */,
 				95A564661AA6F11F005E287E /* CoreGraphics.framework */,
 				95A564681AA6F11F005E287E /* UIKit.framework */,
@@ -285,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B485B91B0332990061C31D /* .gitignore in Resources */,
 				95A5647D1AA6F11F005E287E /* Images.xcassets in Resources */,
 				95A5646F1AA6F11F005E287E /* InfoPlist.strings in Resources */,
 				95A564781AA6F11F005E287E /* Main.storyboard in Resources */,
